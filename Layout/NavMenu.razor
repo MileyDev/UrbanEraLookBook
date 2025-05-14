@@ -1,0 +1,44 @@
+﻿@using LookBook.Pages
+@code {
+    private bool isNavOpen = false;
+
+    private void ToggleNav()
+    {
+        isNavOpen = !isNavOpen;
+    }
+}
+
+<Hero />
+<nav class="bg-black text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+
+            <!-- Hamburger for mobile -->
+            <button @onclick="ToggleNav" class="md:hidden text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <!-- Menu for large screens -->
+            <div class="hidden md:flex space-x-6">
+                <NavLink href="/" class="text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">Home</NavLink>
+                <NavLink href="/lookbook" class="text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">Lookbook</NavLink>
+                <NavLink href="/gallery" class="text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">Gallery</NavLink>
+                <NavLink href="/about" class="text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">About</NavLink>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collapsible menu for mobile -->
+    @if (isNavOpen)
+    {
+        <div class="md:hidden px-4 pb-4 space-y-2 bg-black">
+            <NavLink href="/" class="block text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">Home</NavLink>
+            <NavLink href="/lookbook" class="block text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">Lookbook</NavLink>
+            <NavLink href="/gallery" class="block text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">Gallery</NavLink>
+            <NavLink href="/about" class="block text-white hover:text-urbangold" activeClass="text-urbangold font-semibold">About</NavLink>
+        </div>
+    }
+</nav>

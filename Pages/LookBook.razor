@@ -1,0 +1,43 @@
+@page "/lookbook"
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Title & description -->
+    <div class="text-center mb-10">
+        <h1 class="text-4xl font-extrabold text-urbangold mb-2">UrbanEra Lookbook</h1>
+        <p class="text-lg text-gray-300">A visual archive of bold statements and standout drops.</p>
+    </div>
+
+    <!-- Scrollable Card Gallery -->
+    <div class="overflow-x-auto">
+        <div class="flex space-x-6 pb-4">
+            @foreach (var item in LookBookItems)
+            {
+                <div class="min-w-[16rem] sm:min-w-[18rem] md:min-w-[20rem] bg-white text-black rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 active:scale-100">
+                    <img src="@item.ImageUrl" alt="@item.Title" class="w-full h-48 object-cover rounded-t-2xl" />
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">@item.Title</h2>
+                        <p class="text-sm text-gray-700 mt-1">@item.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    class LookBookItem
+    {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ImageUrl { get; set; }
+    }
+
+    List<LookBookItem> LookBookItems = new()
+    {
+        new LookBookItem { Title = "Baby thug fit", Description = "Certified urban-graffiti long-sleeved tee", ImageUrl = "images/longsleeved1.jpg" },
+        new LookBookItem { Title = "Urban Boy", Description = "Street legend set", ImageUrl = "images/shoot1.jpg" },
+        new LookBookItem { Title = "Live...", Description = "UrbanBoy with Vision", ImageUrl = "images/vibe.jpg" },
+        new LookBookItem { Title = "UrbanHaven Beanie", Description = "Same hunger, thicker strides", ImageUrl = "images/beaniesmoke.jpg" },
+         new LookBookItem { Title = "Drop 004", Description = "Same hunger, thicker strides", ImageUrl = "images/shoot3.jpg" }
+    };
+}
