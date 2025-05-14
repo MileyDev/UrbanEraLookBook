@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2qeBwZKBmelAvI6fO/7J3d8mXbEybft88+dVYw+2OAU=",
+  "Hash": "7nUfC8VgAHC1ZAwv9aU+/oTdDASnI9T08PajJfCrtVw=",
   "Source": "LookBook",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "us7gwrgtc1",
-      "Integrity": "fjftQbcESbtp7eW5kP2LF/EMTNxe2vPKt38KLlYq3w0=",
+      "Fingerprint": "n248qps8vb",
+      "Integrity": "YRvTlMLrrAr5+cE+JYnl2BU+MfxXYjuY88BRTAD2oPk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "ddvj7ltq8l",
-      "Integrity": "kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc=",
+      "Fingerprint": "nwwzkjogl0",
+      "Integrity": "qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\LookBook.pdb"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "5h77lcuah0",
-      "Integrity": "mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ=",
+      "Fingerprint": "mraocn33ot",
+      "Integrity": "fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\webcil\\LookBook.wasm"
@@ -4742,12 +4742,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.Compression.ZipFile.wasm"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-5h77lcuah0.gz",
+      "Identity": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-mraocn33ot.gz",
       "SourceId": "LookBook",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/LookBook#[.{fingerprint=5h77lcuah0}]!.wasm.gz",
+      "RelativePath": "_framework/LookBook#[.{fingerprint=mraocn33ot}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -4756,8 +4756,8 @@
       "RelatedAsset": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LookBook.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0kqv3h8eco",
-      "Integrity": "MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg=",
+      "Fingerprint": "xr6xo5dfbu",
+      "Integrity": "jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LookBook.wasm"
@@ -6506,7 +6506,7 @@
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Loader.wasm"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\dpzrx7ka9p-us7gwrgtc1.gz",
+      "Identity": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\dpzrx7ka9p-n248qps8vb.gz",
       "SourceId": "LookBook",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\",
@@ -6520,8 +6520,8 @@
       "RelatedAsset": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "amcwbwxxwc",
-      "Integrity": "Hj3TaBsjvFCYbPQ/EIIal9Z0OMOnLId6BhpD9Bzo47w=",
+      "Fingerprint": "be95978ysu",
+      "Integrity": "0+OVo9wFS2lZpDyXygcApHYfVVYKHSxMeftRi+TCBRo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7115,12 +7115,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.wasm"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-ddvj7ltq8l.gz",
+      "Identity": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-nwwzkjogl0.gz",
       "SourceId": "LookBook",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/LookBook#[.{fingerprint=ddvj7ltq8l}]!.pdb.gz",
+      "RelativePath": "_framework/LookBook#[.{fingerprint=nwwzkjogl0}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7129,8 +7129,8 @@
       "RelatedAsset": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LookBook.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ud34fclv4h",
-      "Integrity": "IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM=",
+      "Fingerprint": "ut9nalgq2i",
+      "Integrity": "fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LookBook.pdb"
@@ -10894,11 +10894,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fjftQbcESbtp7eW5kP2LF/EMTNxe2vPKt38KLlYq3w0=\""
+          "Value": "\"YRvTlMLrrAr5+cE+JYnl2BU+MfxXYjuY88BRTAD2oPk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10908,13 +10908,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fjftQbcESbtp7eW5kP2LF/EMTNxe2vPKt38KLlYq3w0="
+          "Value": "sha256-YRvTlMLrrAr5+cE+JYnl2BU+MfxXYjuY88BRTAD2oPk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\dpzrx7ka9p-us7gwrgtc1.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\dpzrx7ka9p-n248qps8vb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10933,11 +10933,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Hj3TaBsjvFCYbPQ/EIIal9Z0OMOnLId6BhpD9Bzo47w=\""
+          "Value": "\"0+OVo9wFS2lZpDyXygcApHYfVVYKHSxMeftRi+TCBRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:22:22 GMT"
+          "Value": "Wed, 14 May 2025 20:46:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10957,19 +10957,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fjftQbcESbtp7eW5kP2LF/EMTNxe2vPKt38KLlYq3w0=\""
+          "Value": "W/\"YRvTlMLrrAr5+cE+JYnl2BU+MfxXYjuY88BRTAD2oPk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fjftQbcESbtp7eW5kP2LF/EMTNxe2vPKt38KLlYq3w0="
+          "Value": "sha256-YRvTlMLrrAr5+cE+JYnl2BU+MfxXYjuY88BRTAD2oPk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\dpzrx7ka9p-us7gwrgtc1.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\dpzrx7ka9p-n248qps8vb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10986,11 +10986,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Hj3TaBsjvFCYbPQ/EIIal9Z0OMOnLId6BhpD9Bzo47w=\""
+          "Value": "\"0+OVo9wFS2lZpDyXygcApHYfVVYKHSxMeftRi+TCBRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:22:22 GMT"
+          "Value": "Wed, 14 May 2025 20:46:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11008,7 +11008,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Hj3TaBsjvFCYbPQ/EIIal9Z0OMOnLId6BhpD9Bzo47w="
+          "Value": "sha256-0+OVo9wFS2lZpDyXygcApHYfVVYKHSxMeftRi+TCBRo="
         }
       ]
     },
@@ -13832,7 +13832,7 @@
       ]
     },
     {
-      "Route": "_framework/LookBook.5h77lcuah0.wasm",
+      "Route": "_framework/LookBook.mraocn33ot.wasm",
       "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LookBook.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13850,11 +13850,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ=\""
+          "Value": "\"fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:45:59 GMT"
+          "Value": "Wed, 14 May 2025 22:42:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13864,7 +13864,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5h77lcuah0"
+          "Value": "mraocn33ot"
         },
         {
           "Name": "label",
@@ -13872,18 +13872,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ="
+          "Value": "sha256-fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k="
         }
       ]
     },
     {
-      "Route": "_framework/LookBook.5h77lcuah0.wasm",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-5h77lcuah0.gz",
+      "Route": "_framework/LookBook.mraocn33ot.wasm",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-mraocn33ot.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000128057370"
+          "Quality": "0.000125992188"
         }
       ],
       "ResponseHeaders": [
@@ -13893,15 +13893,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7808"
+          "Value": "7936"
         },
         {
           "Name": "ETag",
-          "Value": "\"MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg=\""
+          "Value": "\"jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13921,13 +13921,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ=\""
+          "Value": "W/\"fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5h77lcuah0"
+          "Value": "mraocn33ot"
         },
         {
           "Name": "label",
@@ -13935,13 +13935,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ="
+          "Value": "sha256-fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k="
         }
       ]
     },
     {
-      "Route": "_framework/LookBook.5h77lcuah0.wasm.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-5h77lcuah0.gz",
+      "Route": "_framework/LookBook.mraocn33ot.wasm.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-mraocn33ot.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13950,7 +13950,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7808"
+          "Value": "7936"
         },
         {
           "Name": "Content-Type",
@@ -13958,11 +13958,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg=\""
+          "Value": "\"jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13980,7 +13980,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5h77lcuah0"
+          "Value": "mraocn33ot"
         },
         {
           "Name": "label",
@@ -13988,12 +13988,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg="
+          "Value": "sha256-jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU="
         }
       ]
     },
     {
-      "Route": "_framework/LookBook.ddvj7ltq8l.pdb",
+      "Route": "_framework/LookBook.nwwzkjogl0.pdb",
       "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LookBook.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14003,7 +14003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24684"
+          "Value": "24904"
         },
         {
           "Name": "Content-Type",
@@ -14011,11 +14011,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc=\""
+          "Value": "\"qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:45:59 GMT"
+          "Value": "Wed, 14 May 2025 22:42:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14025,7 +14025,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ddvj7ltq8l"
+          "Value": "nwwzkjogl0"
         },
         {
           "Name": "label",
@@ -14033,18 +14033,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc="
+          "Value": "sha256-qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM="
         }
       ]
     },
     {
-      "Route": "_framework/LookBook.ddvj7ltq8l.pdb",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-ddvj7ltq8l.gz",
+      "Route": "_framework/LookBook.nwwzkjogl0.pdb",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-nwwzkjogl0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000055549383"
+          "Quality": "0.000054923930"
         }
       ],
       "ResponseHeaders": [
@@ -14054,15 +14054,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18001"
+          "Value": "18206"
         },
         {
           "Name": "ETag",
-          "Value": "\"IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM=\""
+          "Value": "\"fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14082,13 +14082,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc=\""
+          "Value": "W/\"qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ddvj7ltq8l"
+          "Value": "nwwzkjogl0"
         },
         {
           "Name": "label",
@@ -14096,13 +14096,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc="
+          "Value": "sha256-qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM="
         }
       ]
     },
     {
-      "Route": "_framework/LookBook.ddvj7ltq8l.pdb.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-ddvj7ltq8l.gz",
+      "Route": "_framework/LookBook.nwwzkjogl0.pdb.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-nwwzkjogl0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14111,7 +14111,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18001"
+          "Value": "18206"
         },
         {
           "Name": "Content-Type",
@@ -14119,11 +14119,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM=\""
+          "Value": "\"fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14141,7 +14141,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ddvj7ltq8l"
+          "Value": "nwwzkjogl0"
         },
         {
           "Name": "label",
@@ -14149,7 +14149,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM="
+          "Value": "sha256-fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54="
         }
       ]
     },
@@ -14164,7 +14164,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24684"
+          "Value": "24904"
         },
         {
           "Name": "Content-Type",
@@ -14172,11 +14172,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc=\""
+          "Value": "\"qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:45:59 GMT"
+          "Value": "Wed, 14 May 2025 22:42:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14186,18 +14186,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc="
+          "Value": "sha256-qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM="
         }
       ]
     },
     {
       "Route": "_framework/LookBook.pdb",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-ddvj7ltq8l.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-nwwzkjogl0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000055549383"
+          "Quality": "0.000054923930"
         }
       ],
       "ResponseHeaders": [
@@ -14207,15 +14207,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18001"
+          "Value": "18206"
         },
         {
           "Name": "ETag",
-          "Value": "\"IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM=\""
+          "Value": "\"fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14235,19 +14235,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc=\""
+          "Value": "W/\"qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kVBkYroObndhn6xO2knF7KO+z4a7+pGd2t/aZivPvDc="
+          "Value": "sha256-qS7Jxofrt9/rpGjthXnpWtKlt4TzJwS6Y/OB+hU/jSM="
         }
       ]
     },
     {
       "Route": "_framework/LookBook.pdb.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-ddvj7ltq8l.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\im3ryyn18q-nwwzkjogl0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14256,7 +14256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18001"
+          "Value": "18206"
         },
         {
           "Name": "Content-Type",
@@ -14264,11 +14264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM=\""
+          "Value": "\"fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14286,7 +14286,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IhnRBBp1WtxeQlxGR5Mugo0T/PuWQItY/do11uQy0nM="
+          "Value": "sha256-fjAyuFkwGlHkTsAmPcoFe/M+gLJhWQjvUZfIut5Dv54="
         }
       ]
     },
@@ -14309,11 +14309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ=\""
+          "Value": "\"fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:45:59 GMT"
+          "Value": "Wed, 14 May 2025 22:42:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14323,18 +14323,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ="
+          "Value": "sha256-fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k="
         }
       ]
     },
     {
       "Route": "_framework/LookBook.wasm",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-5h77lcuah0.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-mraocn33ot.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000128057370"
+          "Quality": "0.000125992188"
         }
       ],
       "ResponseHeaders": [
@@ -14344,15 +14344,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7808"
+          "Value": "7936"
         },
         {
           "Name": "ETag",
-          "Value": "\"MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg=\""
+          "Value": "\"jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14372,19 +14372,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ=\""
+          "Value": "W/\"fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mWZCD9AoPek57vGYXeai630GvLdt7qZi9luU1kGgkYQ="
+          "Value": "sha256-fnuCXSdVwoyKp35Nx50IfHnj8UH6yDyEQKxljzhRi2k="
         }
       ]
     },
     {
       "Route": "_framework/LookBook.wasm.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-5h77lcuah0.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\obj\\Debug\\net9.0\\compressed\\2o3hto67gm-mraocn33ot.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14393,7 +14393,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7808"
+          "Value": "7936"
         },
         {
           "Name": "Content-Type",
@@ -14401,11 +14401,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg=\""
+          "Value": "\"jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 20:46:01 GMT"
+          "Value": "Wed, 14 May 2025 22:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14423,7 +14423,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MF+EXEAfaAUIBdiKPmej13DJGDruE0q9qV4tSTfQpXg="
+          "Value": "sha256-jXygsGcGdf95RHnYPDrmihvqxw/3eK4Q1oBRnUOaizU="
         }
       ]
     },
