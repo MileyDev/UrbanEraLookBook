@@ -1,18 +1,25 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: [
-    "./**/*.html",
-    "./**/*.razor",
-    "./wwwroot/index.html"
+    './**/*.razor',
+    './**/*.html',
+    './**/*.cshtml',
+    './**/*.js'
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Urbanist', 'sans-serif'],
-      },
       colors: {
-        urbanblack: "#0a0a0a",
-        urbangold: "#FFD700",
+        urbangold: '#FFD700',
+        urbanblack: '#0a0a0a',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 1s ease-out forwards',
       },
     },
   },
