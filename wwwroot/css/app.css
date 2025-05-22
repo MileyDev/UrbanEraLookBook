@@ -5,6 +5,12 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background-color: black;
 }
 
 h1:focus {
@@ -19,6 +25,24 @@ a, .btn-link {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
+}
+.logo-img {
+    width: auto;
+    height: 38px;
+    transition: transform 0.3s ease;
+}
+@media (min-width: 768px) {
+    .logo-img{
+        height: 42px;
+    }
+}
+@media (min-width: 1024px) {
+    .logo-img {
+        height: 48px;
+    }
+}
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LookBook")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88e5caa21ac17665680f673738b31073c45e7922")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da556b4cd58857aeff027ffa5051512bfde3a77f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LookBook")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LookBook")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

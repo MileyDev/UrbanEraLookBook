@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\css\\output.css"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
-    },
-    {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\beanie1.jpg",
       "PackagePath": "staticwebassets\\images\\beanie1.jpg"
     },
@@ -37,6 +33,14 @@
       "PackagePath": "staticwebassets\\images\\fmshoot.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\herologo.png",
+      "PackagePath": "staticwebassets\\images\\herologo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\logo1.jpg",
+      "PackagePath": "staticwebassets\\images\\logo1.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\longsleeved1.jpg",
       "PackagePath": "staticwebassets\\images\\longsleeved1.jpg"
     },
@@ -45,16 +49,32 @@
       "PackagePath": "staticwebassets\\images\\shoot1.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\shoot2.jpg",
+      "PackagePath": "staticwebassets\\images\\shoot2.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\socks1.jpg",
       "PackagePath": "staticwebassets\\images\\socks1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\socks2.jpg",
+      "PackagePath": "staticwebassets\\images\\socks2.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\vibe.jpg",
       "PackagePath": "staticwebassets\\images\\vibe.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\images\\vid2_thumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\vid2_thumbnail.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\js\\lookbook.js",
+      "PackagePath": "staticwebassets\\js\\lookbook.js"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -235,6 +255,14 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\videos\\vid1.mp4",
+      "PackagePath": "staticwebassets\\videos\\vid1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\coding\\LookBook\\wwwroot\\videos\\vid2.mp4",
+      "PackagePath": "staticwebassets\\videos\\vid2.mp4"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LookBook.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

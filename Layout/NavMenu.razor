@@ -1,44 +1,75 @@
 ﻿@using LookBook.Pages
-<nav class="bg-black shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <!-- Logo / Brand -->
-            <div class="flex-shrink-0 text-urbangold font-extrabold text-2xl tracking-wide">
-                UrbanEra
-            </div>
+@using Microsoft.AspNetCore.Components.Routing
 
-            <!-- Hamburger (mobile) -->
-            <div class="md:hidden">
-                <button @onclick="ToggleMenu" class="text-white focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
+<div class="flex items-center relative">
+    <!-- Hamburger (mobile only) -->
+    <button @onclick="ToggleMenu" class="md:hidden text-white focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
 
-            <!-- Nav links -->
-            <div class="hidden md:flex space-x-8 items-center">
-                <NavLink href="/" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Home</NavLink>
-                <NavLink href="/lookbook" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Lookbook</NavLink>
-                <NavLink href="/gallery" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Gallery</NavLink>
-                <NavLink href="/about" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">About</NavLink>
+    <!-- Desktop links -->
+    <div class="hidden md:flex space-x-8 items-center ml-6">
+        <NavLink href="/" Match="NavLinkMatch.All" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Home</NavLink>
+        <NavLink href="/lookbook" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Lookbook</NavLink>
+        <NavLink href="/gallery" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Gallery</NavLink>
+        <NavLink href="/about" class="text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">About</NavLink>
+    </div>
+
+    <!-- Mobile menu -->
+
+   <div class="@($"fixed inset-0 z-50 flex md:hidden transition-transform duration-300 ease-in-out {(isMenuOpen ? "translate-x-0" : "translate-x-full")}")">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" @onclick="ToggleMenu"></div>
+
+        <!-- Slide-in Panel -->
+        <div class="relative w-64 h-full bg-black bg-opacity-80 shadow-xl z-50 px-6 py-6">
+            <!-- Close Button -->
+            <button @onclick="ToggleMenu" class="absolute top-4 right-4 text-white hover:text-urbangold focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Mobile Nav Links -->
+            <nav class="mt-16 space-y-6 text-lg font-semibold text-white">
+                <NavLink href="/" Match="NavLinkMatch.All" class="block hover:text-urbangold transition" activeClass="text-urbangold">Home</NavLink>
+                <NavLink href="/lookbook" class="block hover:text-urbangold transition" activeClass="text-urbangold">Lookbook</NavLink>
+                <NavLink href="/gallery" class="block hover:text-urbangold transition" activeClass="text-urbangold">Gallery</NavLink>
+                <NavLink href="/about" class="block hover:text-urbangold transition" activeClass="text-urbangold">About</NavLink>
+            </nav>
+        </div>
+   </div>
+
+   @if (isMenuOpen)
+{
+    <div class="fixed inset-0 z-50 flex justify-end md:hidden">
+        <!-- Transparent overlay (optional, click to close menu) -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" @onclick="ToggleMenu"></div>
+
+        <!-- Slide-in panel -->
+        <div class="relative w-64 h-full bg-black bg-opacity-50 shadow-xl z-50 transform transition-transform duration-300 ease-in-out">
+            <!-- Close icon -->
+            <button @onclick="ToggleMenu" class="absolute top-4 right-4 text-white hover:text-urbangold focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="mt-16 px-6 space-y-4">
+                <NavLink href="/" Match="NavLinkMatch.All" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Home</NavLink>
+                <NavLink href="/lookbook" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Lookbook</NavLink>
+                <NavLink href="/gallery" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Gallery</NavLink>
+                <NavLink href="/about" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">About</NavLink>
             </div>
         </div>
     </div>
+}
 
-    <!-- Mobile Menu -->
-    <div class="md:hidden transition-all duration-300 ease-in-out" style="overflow: hidden;" 
-         @(isMenuOpen ? "" : "hidden")>
-        <div class="px-4 pb-4 space-y-2 bg-black">
-            <NavLink href="/" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Home</NavLink>
-            <NavLink href="/lookbook" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Lookbook</NavLink>
-            <NavLink href="/gallery" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">Gallery</NavLink>
-            <NavLink href="/about" class="block text-white hover:text-urbangold transition" activeClass="text-urbangold font-semibold">About</NavLink>
-        </div>
-    </div>
-</nav>
-
+</div>
 
 @code {
     private bool isMenuOpen = false;

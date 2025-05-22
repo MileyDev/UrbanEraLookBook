@@ -1,0 +1,38 @@
+@page "/lookdetail/{Id:int}"
+@using Models
+
+@code {/*
+    [Parameter] public int Id { get; set; }
+
+    LookBookItem look;
+    protected override void OnInitialized()
+    {
+        var LookBookItems = new List<LookBookItem>
+
+{
+new LookBookItem { Id = 1, Title = "Baby thug fit", Description = "Certified urban-graffiti long-sleeved tee", ImageUrl =
+"images/longsleeved1.jpg" },
+new LookBookItem { Id = 2, Title = "Urban Boy", Description = "Street legend set", ImageUrl = "images/shoot1.jpg" },
+new LookBookItem { Id= 3, Title = "Live...", Description = "UrbanBoy with Vision", ImageUrl = "images/vibe.jpg" },
+new LookBookItem { Id = 4, Title = " 'U' Cloud", Description = "Same hunger, thicker strides", ImageUrl =
+"images/beaniesmoke.jpg" },
+new LookBookItem { Id = 5, Title = "Fit Check💦", Description = "Same hunger, thicker strides", ImageUrl = "images/shoot2.jpg" }
+};
+
+    look = LookBookItems.FirstOrDefault(l => l.Id == Id);
+    }
+}
+
+@if (look != null)
+{
+    <div class="max-w-3xl mx-auto p-4 text-white">
+        <img src="@look.ImageUrl" alt="@look.Title" class="rounded-lg shadow-lg w-full" />
+        <h1 class="text-3xl font-bold mt-4">@look.Title</h1>
+        <p class="text-sm text-gray-700 mt-1">@look.Description</p>
+        <a href="/lookbook" class="overflow-hidden rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+            Back to LookBook</a>
+        <a href="/" class="overflow-hidden rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+            Back to Homepage</a>    
+    </div>
+    */
+}

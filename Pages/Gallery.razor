@@ -1,25 +1,90 @@
 @page "/gallery"
+@layout Layout.FullSreenLayout
 
-<h2 class="text-3xl font-bold mb-6 text-urbangold">The UrbanEra Gallery</h2>
+<div class="p-4 bg-black min-h-screen text-white">
+    <h1 class="text-3xl font-bold text-urbangold mb-6 animate-fade-in delay-200">The Gallery</h1>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    @foreach(var img in GalleryImages)
-    {
-          <div class="overflow-hidden rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
-            <img src="@img" class="w-full h-64 object-cover" />
-        </div>
-    }
+    <!-- Grid Gallery -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 animate-fade-in delay-300">
+        @foreach (var media in galleryItems)
+        {
+            @if (media.IsVideo)
+            {
+                <img src="@media.Thumbnail" @onclick="@(() => OpenModal(media))"
+                    class="cursor-pointer object-cover w-full h-48 rounded-lg hover:scale-105 transition-transform duration-200 animate-fade-in delay-500" />
+            }
+            else
+            {
+                <img src="@media.Source" @onclick="@(() => OpenModal(media))"
+                    class="cursor-pointer object-cover w-full h-48 rounded-lg hover:scale-105 transition-transform duration-200" />
+            }
+        }
+    </div>
 </div>
 
-@code {
-    List<string> GalleryImages = new()
+<!-- Fullscreen Modal -->
+@if (isModalOpen)
+{
+
+    <div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 backdrop-blur-sm">
+        <button @onclick="CloseModal"
+            class="absolute top-2 left-4 z-50 bg-black bg-opacity-60 text-urbangold px-4 py-2 rounded-full shadow hover:bg-opacity-90 transition">
+            ⬅
+        </button>
+        @if (selectedMedia?.IsVideo == true)
         {
-            "images/beanie1.jpg",
-            "images/shoot2.jpg",
-            "images/fmshoot.jpg",
-            "images/shoot3.jpg",
-            "images/socks1.jpg",
-            "images/beaniesmoke.jpg",
-            "images.beanie2.jpg"
-        };
+            <video controls autoplay class="max-w-full max-h-full rounded-lg shadow-lg">
+                <source src="@selectedMedia.Source" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        }
+        else if (selectedMedia != null)
+        {
+            <img src="@selectedMedia.Source" class="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
+        }
+    </div>
+}
+
+@code {
+    public class GalleryMedia
+    {
+        public string Source { get; set; }
+        public bool IsVideo { get; set; } = false!;
+        public string Thumbnail { get; set; }
+    }
+    public List<GalleryMedia> galleryItems = new()
+{
+new GalleryMedia {Source = "images/shoot1.jpg"},
+new GalleryMedia {Source = "images/vibe.jpg"},
+new GalleryMedia {Source = "images/beanie1.jpg"},
+new GalleryMedia {Source = "images/shoot2.jpg"},
+new GalleryMedia {Source = "images/fmshoot.jpg"},
+new GalleryMedia {Source = "images/socks1.jpg"},
+new GalleryMedia {Source = "images/beanie2.jpg"},
+new GalleryMedia {Source = "images/beaniesmoke.jpg"},
+new GalleryMedia {Source = "images/vid2.mp4", IsVideo = true, Thumbnail = "images/vid2_thumbnail.jpg"}
+};
+
+    private bool isModalOpen = false;
+    private GalleryMedia? selectedMedia;
+
+    private void OpenModal(GalleryMedia media)
+    {
+        selectedMedia = media;
+        isModalOpen = true;
+    }
+
+    private void CloseModal()
+    {
+        isModalOpen = false;
+        selectedMedia = null;
+    }
+
+    [Inject] NavigationManager NavigationManager { get; set; }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
 }

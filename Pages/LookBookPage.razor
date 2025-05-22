@@ -1,0 +1,21 @@
+@page "/lookbook"
+@using Pages
+@using Models
+
+<LookBook MediaList="@LookbookItems" />
+
+@code {
+    public List<LookBookMedia> LookbookItems = new()
+{
+new LookBookMedia {Source = "videos/vid2.mp4", Type = "video"},
+new LookBookMedia {Source = "images/shoot1.jpg"},
+new LookBookMedia {Source = "images/vibe.jpg"},
+new LookBookMedia {Source = "images/beanie1.jpg"},
+new LookBookMedia {Source = "images/shoot2.jpg"},
+new LookBookMedia {Source = "images/fmshoot.jpg"},
+new LookBookMedia {Source = "images/socks1.jpg"},
+new LookBookMedia {Source = "images/beanie2.jpg"},
+new LookBookMedia {Source = "images/beaniesmoke.jpg"},
+new LookBookMedia {Source = "videos/vid1.mp4", Type = "video"}
+};
+}

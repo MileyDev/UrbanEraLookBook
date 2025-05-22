@@ -1,43 +1,89 @@
-@page "/lookbook"
+@inject NavigationManager Navigation
+@inject IJSRuntime JS
+@using Models
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Title & description -->
-    <div class="text-center mb-10">
-        <h1 class="text-4xl font-extrabold text-urbangold mb-2">UrbanEra Lookbook</h1>
-        <p class="text-lg text-gray-300">A visual archive of bold statements and standout drops.</p>
+
+<div class="relative h-screen w-screen overflow-hidden">
+    <!-- Scrollable Media Container -->
+    <div id="lookbook" class="flex overflow-x-auto snap-x snap-mandatory h-full w-full touch-pan-y scroll-smooth"
+        @onwheel="HandleScroll">
+        @for (int i = 0; i < MediaList.Count; i++)
+        {
+            var transitionBase = "transition-transform transition-opacity duration-700 ease-in-out";
+            var isActive = i == CurrentIndex ? "opacity-100 scale-100 z-20" : "opacity-0 scale-95 z-10";
+            <div class="@($"flex-shrink-0 w-screen h-screen snap-start transform media-slide {transitionBase} {isActive}")">
+                @if (MediaList[i].Type == "image")
+                {
+                    <img src="@MediaList[i].Source" alt="Lookbook image @i" class="object-cover w-full h-full" />
+                }
+                else if (MediaList[i].Type == "video")
+                {
+                    <video src="@MediaList[i].Source" class="object-cover w-full h-full" autoplay muted loop
+                        playsinline></video>
+                }
+            </div>
+        }
     </div>
 
-    <!-- Scrollable Card Gallery -->
-    <div class="overflow-x-auto">
-        <div class="flex space-x-6 pb-4">
-            @foreach (var item in LookBookItems)
-            {
-                <div class="min-w-[16rem] sm:min-w-[18rem] md:min-w-[20rem] bg-white text-black rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 active:scale-100">
-                    <img src="@item.ImageUrl" alt="@item.Title" class="w-full h-48 object-cover rounded-t-2xl" />
-                    <div class="p-4">
-                        <h2 class="text-xl font-semibold">@item.Title</h2>
-                        <p class="text-sm text-gray-700 mt-1">@item.Description</p>
-                    </div>
-                </div>
-            }
-        </div>
+    <!-- Page Indicators -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-50">
+        @for (int i = 0; i < MediaList.Count; i++)
+        {
+            var active = i == CurrentIndex
+            ? "bg-white w-3 h-3"
+            : "bg-white/40 w-2 h-2";
+            <div class="@($"rounded-full {active}")"></div>
+        }
     </div>
+
+    <!-- Back Button -->
+    <button
+        class="absolute top-4 left-4 z-50 bg-black/60 text-white px-4 py-2 rounded backdrop-blur-sm hover:bg-black/80"
+        @onclick="GoBack">
+        ← Back
+    </button>
 </div>
 
 @code {
-    class LookBookItem
+    [Parameter]
+    public List<LookBookMedia> MediaList { get; set; } = new();
+
+    private int CurrentIndex = 0;
+
+    private DotNetObjectReference<LookBook>? _dotNetRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string ImageUrl { get; set; }
+        if (firstRender)
+        {
+            _dotNetRef = DotNetObjectReference.Create(this);
+            await JS.InvokeVoidAsync("initializeLookbookInterop", _dotNetRef);
+        }
     }
 
-    List<LookBookItem> LookBookItems = new()
+    public async ValueTask DisposeAsync()
     {
-        new LookBookItem { Title = "Baby thug fit", Description = "Certified urban-graffiti long-sleeved tee", ImageUrl = "images/longsleeved1.jpg" },
-        new LookBookItem { Title = "Urban Boy", Description = "Street legend set", ImageUrl = "images/shoot1.jpg" },
-        new LookBookItem { Title = "Live...", Description = "UrbanBoy with Vision", ImageUrl = "images/vibe.jpg" },
-        new LookBookItem { Title = "UrbanHaven Beanie", Description = "Same hunger, thicker strides", ImageUrl = "images/beaniesmoke.jpg" },
-         new LookBookItem { Title = "Drop 004", Description = "Same hunger, thicker strides", ImageUrl = "images/shoot3.jpg" }
-    };
+        _dotNetRef?.Dispose();
+    }
+
+    [JSInvokable]
+    public async Task UpdateCurrentSlideAsync()
+    {
+        CurrentIndex = await JS.InvokeAsync<int>("getCurrentSlideIndex");
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public Task ExitLookbook()
+    {
+        Navigation.NavigateTo("/");
+        return Task.CompletedTask;
+    }
+
+    private void GoBack() => Navigation.NavigateTo("/");
+
+    private async Task HandleScroll(WheelEventArgs args)
+    {
+        await UpdateCurrentSlideAsync();
+    }
 }
